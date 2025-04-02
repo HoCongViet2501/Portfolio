@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+- You must focus on VueJs and Spring Framework
+- You can suggest best practice on your code suggestion

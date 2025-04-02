@@ -1,0 +1,111 @@
+/* Global CSS for all components */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+/* Fix navbar issues with absolute content */
+.fixed {
+  z-index: 50;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* Override Tailwind max-width */
+.max-w-7xl {
+  max-width: 100% !important;
+}
+
+.container, .max-w-screen-2xl {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+@media (min-width: 640px) {
+  .container, .max-w-screen-2xl {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container, .max-w-screen-2xl {
+    max-width: 100% !important;
+  }
+}
+
+/* Section specific layout fixes */
+section#home {
+  padding-top: 64px; /* Navbar height */
+  min-height: calc(100vh - 0px); /* Adjust for sticky header */
+  z-index: 10;
+}
+
+section#about {
+  position: relative;
+  z-index: 20;
+}
+
+/* Fix footer */
+footer {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* Remove debug borders */
+.debug-border {
+  border: none !important;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Remove grid gaps */
+.grid {
+  width: 100%;
+} 
